@@ -20,9 +20,6 @@
     position: relative;
     margin: 0px;
     padding: 0px;
-    left: 50vw;
-    top: 50vh;
-    transform: translate(-50%, -50%);
     text-align: right;
     border: solid 1px black;
     height: 20em;
@@ -45,11 +42,31 @@
     width: 7em;
     background-color: #888;
   }
+
+  .rahmen{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 20vh);
+  }
+
+  .svg-image{
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+
+  .liste{
+  }
+
+  .legende{
+
+  }
   </style>
 </head>
 <body>
 
-  <main class="cadre">
+  <main class="rahmen">
 
       <ul class="colors">
         <li><span>there are two facts about the way the img element behaves that we need to understand first...</span></li>
